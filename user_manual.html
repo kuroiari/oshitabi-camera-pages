@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>推し旅カメラ かんたん取扱説明書</title>
+  <style>
+    :root {
+      color: #3f3448;
+      background: #fff7ec;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.8;
+    }
+    body {
+      margin: 0;
+      padding: 32px 18px;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px;
+      background: #ffffff;
+      border: 1px solid #efdff6;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(118, 88, 142, 0.12);
+    }
+    h1 {
+      margin-top: 0;
+      color: #8c64d8;
+      font-size: 1.9rem;
+      line-height: 1.35;
+    }
+    h2 {
+      margin-top: 2rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid #eadcf7;
+      color: #8c64d8;
+      font-size: 1.25rem;
+    }
+    a {
+      color: #8c64d8;
+    }
+    ul, ol {
+      padding-left: 1.4rem;
+    }
+    .updated {
+      color: #6d6275;
+      font-size: 0.95rem;
+    }
+    .notice {
+      padding: 14px 16px;
+      background: #f7efff;
+      border-radius: 12px;
+    }
+    .hero {
+      margin: 20px 0 28px;
+      padding: 20px;
+      background: linear-gradient(135deg, #fff7ec 0%, #f9efff 55%, #eef9ff 100%);
+      border-radius: 18px;
+    }
+    .hero p {
+      margin-bottom: 0;
+    }
+    .screen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 16px;
+      margin: 20px 0 12px;
+    }
+    figure {
+      margin: 22px 0;
+    }
+    .screen-card {
+      margin: 0;
+      padding: 12px;
+      background: #fffaf5;
+      border: 1px solid #f0e2f8;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(118, 88, 142, 0.10);
+    }
+    .screen-card img,
+    .manual-screen img {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
+      border-radius: 14px;
+      box-shadow: 0 10px 26px rgba(63, 52, 72, 0.16);
+    }
+    .screen-card figcaption,
+    .manual-screen figcaption {
+      margin-top: 10px;
+      color: #6d6275;
+      font-size: 0.92rem;
+      text-align: center;
+      line-height: 1.55;
+    }
+    .manual-screen {
+      padding: 16px;
+      background: #fffaf5;
+      border: 1px solid #f0e2f8;
+      border-radius: 16px;
+    }
+    @media (max-width: 520px) {
+      body {
+        padding: 18px 10px;
+      }
+      main {
+        padding: 20px 14px;
+      }
+      .screen-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>推し旅カメラ v1.5 かんたん取扱説明書</h1>
+  <p class="updated">作成日: 2026年5月27日</p>
+  <p class="notice">この説明書は、Androidアプリ「推し旅カメラ」v1.5 の基本的な使い方をまとめたものです。内部テストの結果に合わせて、公開前に内容を見直します。</p>
+
+  <section class="hero" aria-label="アプリの画面イメージ">
+    <h2>画面イメージ</h2>
+    <p>推しとの思い出づくりを楽しく進められるように、やわらかい色合いとイラスト付きの画面で構成しています。</p>
+    <div class="screen-grid">
+      <figure class="screen-card">
+        <img src="assets/manual/home.png" alt="推し旅カメラのホーム画面">
+        <figcaption>ホームから主要機能へ移動できます。</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <img src="assets/manual/camera.png" alt="推し画像を重ねて撮影するカメラ画面">
+        <figcaption>推し画像を重ねて位置や大きさを調整します。</figcaption>
+      </figure>
+      <figure class="screen-card">
+        <img src="assets/manual/sns.png" alt="SNS投稿前に画像や投稿文を確認する画面">
+        <figcaption>SNS投稿前に画像、投稿文、注意事項を確認できます。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <h2>1. アプリの目的</h2>
+  <p>推し旅カメラは、「推しと旅して思い出を残す」「推しが旅して思い出を登録する」をテーマにしたカメラアプリです。</p>
+  <p>推し画像を写真に重ねて撮影し、旅先や日常の思い出を作り、SNS投稿前の確認まで行いやすくすることを目的にしています。</p>
+
+  <h2>2. 主な画面</h2>
+  <ul>
+    <li>ホーム: 主要機能へ移動する画面です。</li>
+    <li>推し画像アルバム: アプリ内に保存した推し画像を管理します。</li>
+    <li>推し画像を選ぶ: スマホフォルダから推し画像を選び、追加や撮影へ進めます。</li>
+    <li>カメラ: 推し画像を重ねて写真を撮影します。</li>
+    <li>撮影結果: 撮影した画像を確認し、SNS投稿や保存へ進めます。</li>
+    <li>思い出アルバム: 撮影・合成した画像を管理します。</li>
+    <li>SNSに投稿: 投稿用画像、コメント、ハッシュタグ、ウォーターマークを確認します。</li>
+    <li>設定: 保存画質、透明度、投稿文、ハッシュタグ候補、ウォーターマーク候補などを設定します。</li>
+  </ul>
+
+  <h2>3. 推し画像を追加する</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/oshi_album.png" alt="推し画像アルバムの画面">
+    <figcaption>推し画像アルバムでは、追加した推し画像を選択・削除・保存できます。</figcaption>
+  </figure>
+  <ol>
+    <li>ホーム画面で「推し画像を選ぶ」を押します。</li>
+    <li>「スマホフォルダ参照」を押します。</li>
+    <li>追加したい画像を選びます。</li>
+    <li>「推し画像に追加」を押すと、推し画像アルバムに保存されます。</li>
+    <li>そのまま撮影したい場合は「撮影に進む」を押します。</li>
+  </ol>
+  <p>推し画像として取り込んだ画像は、元のスマホフォルダ内の画像とは別に、アプリ内へコピーして保存されます。</p>
+
+  <h2>4. AI背景削除を使う</h2>
+  <ol>
+    <li>推し画像アルバムで画像を選びます。</li>
+    <li>確認画面で「AIで背景を削除」を押します。</li>
+    <li>結果を確認します。</li>
+    <li>「新しい推し画像として保存」または「元の画像を上書き」を選びます。</li>
+  </ol>
+  <p>AI背景削除は端末内で処理されます。人物やキャラクターの一部が消える場合や、背景が残る場合があります。保存前に必ず結果を確認してください。</p>
+
+  <h2>5. 推し画像を重ねて撮影する</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/camera.png" alt="推し画像を重ねて撮影するカメラ画面">
+    <figcaption>カメラ画面では、推し画像の位置、大きさ、回転、透明度を調整できます。</figcaption>
+  </figure>
+  <ol>
+    <li>ホーム画面で「推しと撮る」を押します。</li>
+    <li>必要に応じて推し画像を選びます。</li>
+    <li>カメラ画面で推し画像の位置や大きさを調整します。</li>
+    <li>推し画像調整パネルで、回転や透明度を調整します。</li>
+    <li>シャッターボタンを押して撮影します。</li>
+  </ol>
+  <p>カメラ画面では、推し画像をドラッグして移動できます。ピンチ操作で大きさを変更できます。拡大しすぎた場合は、縮小ボタンや表示リセットを使って調整してください。</p>
+
+  <h2>6. 撮影結果を確認する</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/result.png" alt="撮影結果を確認する画面">
+    <figcaption>撮影結果から、SNS投稿、写真確認、撮り直しへ進めます。</figcaption>
+  </figure>
+  <p>撮影後は、撮影結果画面で画像を確認できます。</p>
+  <ul>
+    <li>「SNS投稿へ」: SNS投稿画面へ進みます。</li>
+    <li>「写真を見る」: 画像確認画面で大きく確認します。</li>
+    <li>「撮り直し」: カメラへ戻って再撮影します。</li>
+    <li>「ホームへ戻る」: ホーム画面へ戻ります。</li>
+  </ul>
+  <p>撮影した画像には、加工した画像であることを示すため、固定ウォーターマーク「@推し旅カメラ」が入ります。</p>
+
+  <h2>7. 思い出アルバムを使う</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/memory_album.png" alt="思い出アルバムの画面">
+    <figcaption>思い出アルバムには、撮影・合成した画像が保存されます。</figcaption>
+  </figure>
+  <p>思い出アルバムでは、撮影・合成した画像を確認できます。</p>
+  <ul>
+    <li>画像を押すと確認画面を開けます。</li>
+    <li>画像確認画面からスマホへ保存できます。</li>
+    <li>一括削除や選択保存を行えます。</li>
+    <li>削除操作は元に戻せない場合があるため、必要な画像は先にスマホへ保存してください。</li>
+  </ul>
+
+  <h2>8. SNS投稿を準備する</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/sns.png" alt="SNS投稿前に画像や文章を確認する画面">
+    <figcaption>SNS投稿前に、画像確認、人物写り込みチェック、投稿文、ハッシュタグを確認できます。</figcaption>
+  </figure>
+  <ol>
+    <li>ホーム画面で「SNSに投稿」を押します。</li>
+    <li>思い出アルバムまたはスマホフォルダから投稿画像を選びます。</li>
+    <li>必要に応じて画像を回転します。</li>
+    <li>「画像を確認」で投稿前の画像を確認します。</li>
+    <li>「人物写り込みチェック」で、人物や影の候補を確認します。</li>
+    <li>コメント、ハッシュタグ、ウォーターマークを設定します。</li>
+    <li>著作権注意文を確認します。</li>
+    <li>「SNSにシェア」を押して共有先を選びます。</li>
+  </ol>
+  <p>人物写り込みチェックは補助機能です。暗い場所、小さい人物、反射、影、顔が見えない人物などは検出できない場合があります。投稿前には必ず画像全体を目視で確認してください。</p>
+
+  <h2>9. 設定画面でできること</h2>
+  <figure class="manual-screen">
+    <img src="assets/manual/settings.png" alt="設定画面">
+    <figcaption>設定画面では、投稿文やハッシュタグ候補、ウォーターマーク候補も管理できます。</figcaption>
+  </figure>
+  <ul>
+    <li>保存画質</li>
+    <li>推し画像の初期透明度</li>
+    <li>撮影ガイド表示</li>
+    <li>SNS投稿時のデフォルト投稿文</li>
+    <li>ハッシュタグ候補</li>
+    <li>SNS投稿時のウォーターマーク設定</li>
+    <li>ウォーターマーク候補</li>
+    <li>ウォーターマーク文字サイズ</li>
+    <li>ウォーターマーク文字色</li>
+  </ul>
+  <p>プライバシーポリシー、利用規約、バージョン、キャッシュ削除も設定画面から確認できます。</p>
+
+  <h2>10. スマホに保存する</h2>
+  <p>推し画像や思い出画像は、アプリ内に保存されます。スマホの写真フォルダなどへ出したい場合は、「スマホに保存」または「画像を選択して保存」を使います。</p>
+  <p>スマホへ保存した画像は、アプリを削除しても端末側に残る場合があります。不要な画像は端末の写真アプリなどから削除してください。</p>
+
+  <h2>11. 著作権・肖像権・SNS規約の注意</h2>
+  <p>アニメ、キャラクター、写真、ロゴ、施設、イベント、人物などには、著作権、肖像権、商標権、施設やイベントの撮影ルール、公式ガイドラインが関係する場合があります。</p>
+  <p>本アプリの注意表示や人物写り込みチェックは、投稿前の確認を補助するためのものです。投稿してよい内容かどうか、公開してよい範囲かどうかは、ユーザー自身で最終確認してください。</p>
+
+  <h2>12. 困ったとき</h2>
+  <ul>
+    <li>カメラが使えない場合は、端末の設定でカメラ権限が許可されているか確認してください。</li>
+    <li>画像が見つからない場合は、アプリ内の思い出アルバム、またはスマホへ保存した写真フォルダを確認してください。</li>
+    <li>AI背景削除や人物写り込みチェックがうまくいかない場合は、結果を目視で確認し、必要に応じて別の画像で試してください。</li>
+    <li>SNS投稿ができない場合は、共有先のSNSアプリがインストールされているか、ログイン状態かを確認してください。</li>
+  </ul>
+
+  <h2>13. お問い合わせ</h2>
+  <ul>
+    <li>運営者名: 黒い蟻プロジェクト</li>
+    <li>連絡先: <a href="mailto:kuroiari@mbr.nifty.com">kuroiari@mbr.nifty.com</a></li>
+    <li>補助連絡先: X <a href="https://x.com/kuroiari" rel="noopener noreferrer">@kuroiari</a></li>
+  </ul>
+</main>
+</body>
+</html>
